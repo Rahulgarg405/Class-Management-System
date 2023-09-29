@@ -5,10 +5,6 @@
 }
 
 body{
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center; */
-    /* background-color: #331010; */
     background-color: rgb(236, 236, 236);
     background-size: cover;
     background-position: center;
@@ -16,6 +12,13 @@ body{
     width: 100%;
     color: black;
     font-family:'Courier New', Courier, monospace;
+}
+
+.welcome{
+    width: 50%;
+}
+.welcome h1{
+    margin: 2rem;
 }
 .reg-log{
     display: flex;
@@ -29,13 +32,14 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(97, 24, 0);
+    /* background-color: rgb(97, 24, 0); */
+    background-color: #222f3d;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1.5rem 6rem;
-    border-bottom: 0.25rem solid crimson;
+    border-bottom: 0.25rem solid #0f1111;
 }
 .navbar{
     display: flex;
@@ -76,9 +80,9 @@ a:hover{
     height: 27.5rem;
     padding: 1.5rem;
     /* background: transparent; */
-    border: 2px solid rgba(0, 0, 0, 0.267);
+    border: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, .7);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, .6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,12 +208,12 @@ a:hover{
     color: white;
 }
 .register a{
-    color: rgb(114, 114, 255);
+    color: rgb(7, 7, 173);
     text-decoration: none;
     font-weight: 600;
 }
 .register a:hover{
-    color: goldenrod;
+    color: rgb(255, 0, 0);
 }
 
 
@@ -233,7 +237,7 @@ a:hover{
     padding: 2rem;
 }
 .homeContent p{
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     font-weight: 700;
 }
 .image{
@@ -246,10 +250,11 @@ a:hover{
     justify-content: center;
 }
 
-
 .contact{
     width: 60%;
-    border: 2px solid rgba(0, 0, 0, 0.308);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,12 +273,32 @@ a:hover{
     margin: 1rem;
 }
 footer{
-    color: black;
-    background-color: rgb(95, 99, 98);
-    display: flex;
-    justify-content: space-evenly;
-    padding: 3rem;
+    margin-top: 5rem;
 }
 footer a:hover{
     color: blanchedalmond;
+}
+.foot1{
+    background-color: #37475a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.foot2{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot3{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 1.2rem;
+    text-align: center;
 }
