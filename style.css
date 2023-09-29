@@ -5,23 +5,32 @@
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #331010;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* background-color: #331010; */
+    background-color: rgb(236, 236, 236);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    color: white;
+    width: 100%;
+    color: black;
     font-family:'Courier New', Courier, monospace;
 }
-
+.reg-log{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 header{
-    position:fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgb(97, 24, 0);
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -36,6 +45,7 @@ header{
 }
 a{
     text-decoration: none;
+    color: antiquewhite;
     transition: .3s;
 }
 a:hover{
@@ -59,9 +69,6 @@ a:hover{
     background-color: crimson;
     cursor: pointer;
 }
-/* .welcome{
-    margin-right: 300px;
-} */
 
 .wrap{
     position:relative;
@@ -69,9 +76,9 @@ a:hover{
     height: 27.5rem;
     padding: 1.5rem;
     /* background: transparent; */
-    border: 2px solid rgba(255, 255, 255, .5);
+    border: 2px solid rgba(0, 0, 0, 0.267);
     border-radius: 20px;
-    box-shadow: 30px 30px 30px rgba(0, 0, 0, .7);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, .7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +149,7 @@ a:hover{
     position: relative;
     width: 100%;
     height: 3.2rem;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     margin: 2rem 0;
 }
 .user label{
@@ -167,7 +174,7 @@ a:hover{
     outline: none;
     font-size: 1em;
     font-weight: 600;
-    color: antiquewhite;
+    color: black;
     padding: 0 35px 0 5px;
 }
 
@@ -192,7 +199,6 @@ a:hover{
 }
 .btn:hover{
     cursor: pointer;
-    /* transform: translateY(-0.4rem); */
     transition: all 0.3s;
     background-color: rgb(177, 0, 0);
     color: white;
@@ -205,16 +211,69 @@ a:hover{
 .register a:hover{
     color: goldenrod;
 }
-footer{
-    background-color: #333;
-    height: 9vmax;
-    margin: 1vmax;
-    padding: 1vmax;
-    border-top: 2px solid crimson;
+
+
+.home{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.footpanel a{
-    color: white;
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+.homeContent h1{
+    padding-bottom: 3rem;
+}
+.homeContent h2{
+    padding: 2rem;
+}
+.homeContent h3{
+    padding: 2rem;
+}
+.homeContent p{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.image{
+    width: 80%;
+    margin: 5rem;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact{
+    width: 60%;
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.contact input{
+    margin: 1.2rem;
+    height: 2rem;
+}
+.contact textarea{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.contact .btn{
+    margin: 1rem;
+}
+footer{
+    color: black;
+    background-color: rgb(95, 99, 98);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+footer a:hover{
+    color: blanchedalmond;
 }

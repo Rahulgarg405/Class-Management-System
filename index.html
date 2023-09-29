@@ -4,83 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"> -->
+    <link rel="stylesheet" href="./style.css">
     <title>CMS</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>CLASS MANAGEMENT SYSTEM (CMS)</h1>
-        </div>
 
-        <nav>
-            <div class="navbar">
-                <ul><a>Home</a></ul>
-                <ul><a>About</a></ul>
-                <ul><a>Contact Us</a></ul>
-                <button class="btnlogin">Login</button>
+    <div class="reg-log">
+        <header>
+            <div>
+                <h1>CLASS MANAGEMENT SYSTEM</h1>
             </div>
-        </nav>
-    </header>
 
-    <div class="wrap">
-        <span class="icon-close">
-            <i class="fa-solid fa-xmark"></i>
-        </span>
-        <div class="formbox login">
-            <h2>LOGIN</h2>
-            <form action="#">
-                <div class="user">
-                    <input type="text" required>
-                    <label for="username">Username</label>
-                    <br>
+            <nav>
+                <div class="navbar">
+                    <ul><a href="#home">Home</a></ul>
+                    <ul><a href="">About</a></ul>
+                    <ul><a href="#contact">Contact Us</a></ul>
+                    <button class="btnlogin">Login</button>
                 </div>
-                <div class="user">
-                    <input type="password" required>
-                    <label for="password">Password</label>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="register">
-                    <p>Don't have an Account? <a class="register-link">Register</a></p>
-                </div>
-            </form>
+            </nav>
+        </header>
+
+        <div class="wrap">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="formbox login">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="user">
+                        <input type="text" required>
+                        <label for="username">Username</label>
+                        <br>
+                    </div>
+                    <div class="user">
+                        <input type="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="register">
+                        <p>Don't have an Account? <a class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="formbox register">
+                <h2>REGISTER</h2>
+                <form action="#">
+                    <div class="user">
+                        <input type="text" required>
+                        <label for="username">Username</label>
+                        <br>
+                    </div>
+                    <div class="user">
+                        <input type="text" required>
+                        <label for="email">Email</label>
+                        <br>
+                    </div>
+                    <div class="user">
+                        <input type="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" required> I agree to Terms and Conditions</label>
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+
+                    <div class="register">
+                        <p>Already have an Account? <a class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+
+    <div class="home" id="home">
+        <div class="image">
+            <img src="pexels-cottonbro-studio-4769464.jpg" alt="" width="80%">
         </div>
 
+        <div class="homeContent">
+            <h1>Empower Education with our Class Management System</h1>
+            <br>
+            <h2>"Effortlessly manage courses, engage students, and enhance the learning experience."</h2>
 
-        <div class="formbox register">
-            <h2>REGISTER</h2>
-            <form action="#">
-                <div class="user">
-                    <input type="text" required>
-                    <label for="username">Username</label>
-                    <br>
-                </div>
-                <div class="user">
-                    <input type="text" required>
-                    <label for="email">Email</label>
-                    <br>
-                </div>
-                <div class="user">
-                    <input type="password" required>
-                    <label for="password">Password</label>
-                </div>
-                <div class="check">
-                    <label><input type="checkbox" required> I agree to Terms and Conditions</label>
-                </div>
-
-                <button type="submit" class="btn">Register</button>
-
-                <div class="register">
-                    <p>Already have an Account? <a class="login-link">Login</a></p>
-                </div>
-            </form>
+            <h2>&Implies;Benefits of using it : </h2>
+            <p>
+                "Streamline course creation and management."
+            </p>
+                <br>
+                <p>"Track Assignments effortlessly and improve engagement."</p>
+                <br>
+                <p>"Enhance communication between instructors and students."</p>
+                <br>
+                <p>"Gain insights with powerful analytics tools."</p>
+                <br>
+            </p>
         </div>
+
     </div>
 
+    <div class="cont">
+
+        <div class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="user">
+                    <input type="text" required>
+                    <label for="text">Full Name</label>
+                </div>
+                <div class="user">
+                    <input type="email" required>
+                    <label for="emai">Email</label>
+                </div>
+                <div class="textarea">
+                    <textarea name="" id="" cols="50" rows="10" required placeholder="Write Message Here"></textarea>
+                    <br>
+                    <label for="">Write Message</label>
+                </div>
+
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>&copy; Rahul Garg</p>
+            <p><a href="#">Back to top</a></p>
+            <p><a href="#contact">Contact Us</a></p>
+        </footer>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
