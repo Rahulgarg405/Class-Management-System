@@ -14,4 +14,12 @@ app.set('view engine', 'ejs')
 app.get('/', (req, res)=>{
     res.render('index');
 })
+
+app.get('/studentLogin', (req, res)=>{
+    res.render('studentLogin');
+});
+
+app.get('/teacherLogin', (req, res)=>{
+    res.render('teacherLogin');
+});
 export default app;

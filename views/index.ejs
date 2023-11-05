@@ -14,14 +14,14 @@
 </head>
 
 <body>
-   
+
     <div class="reg-log">
         <div class="welcome">
-            <h1 >Hey!!
-                <br>Welcome to our 
+            <h1>Hey!!
+                <br>Welcome to our
                 <br>Class Management System
             </h1>
-                <img src="pexels-pixabay-289737.jpg" alt="" width="60%">
+            <img src="pexels-pixabay-289737.jpg" alt="" width="60%">
         </div>
         <header>
             <div>
@@ -43,9 +43,14 @@
                 <i class="fa-solid fa-xmark"></i>
             </span>
             <div class="formbox login">
-                <h2>LOGIN</h2>
                 <form action="#">
-                    <div class="user">
+                    <div class="ask">
+                        <h2>Are You a..</h2>
+                        <button type="submit" class="btn"><a href="/studentLogin">Student</a></button>
+                        <h3>or</h3>
+                        <button type="submit" class="btn"><a href="/teacherLogin">Teacher</a></button>
+                    </div>
+                    <!-- <div class="user">
                         <input type="text" required>
                         <label for="username">Username</label>
                         <br>
@@ -57,12 +62,12 @@
                     <button type="submit" class="btn">Login</button>
                     <div class="register">
                         <p>Don't have an Account? <a class="register-link">Register</a></p>
-                    </div>
+                    </div> -->
                 </form>
             </div>
 
 
-            <div class="formbox register">
+            <!-- <div class="formbox register">
                 <h2>REGISTER</h2>
                 <form action="#">
                     <div class="user">
@@ -89,9 +94,9 @@
                         <p>Already have an Account? <a class="login-link">Login</a></p>
                     </div>
                 </form>
-            </div>
+            </div> -->
         </div>
-    </div>    
+    </div>
 
     <div class="home" id="home">
         <div class="image">
@@ -107,13 +112,13 @@
             <p>
                 "Streamline course creation and management."
             </p>
-                <br>
-                <p>"Track Assignments effortlessly and improve engagement."</p>
-                <br>
-                <p>"Enhance communication between instructors and students."</p>
-                <br>
-                <p>"Gain insights with powerful analytics tools."</p>
-                <br>
+            <br>
+            <p>"Track Assignments effortlessly and improve engagement."</p>
+            <br>
+            <p>"Enhance communication between instructors and students."</p>
+            <br>
+            <p>"Gain insights with powerful analytics tools."</p>
+            <br>
             </p>
         </div>
 
@@ -144,23 +149,25 @@
 
     </div>
 
-        <footer>
-            <div class="foot1">
-                <p><a href="#">Back to top</a></p>
-                
+    <footer>
+        <div class="foot1">
+            <p><a href="#">Back to top</a></p>
+
+        </div>
+        <div class="foot2">
+            CLASS MANAGEMENT SYSTEM
+        </div>
+        <div class="foot3">
+            <div class="pages">
+                <a href="">Conditions of use </a><span>||</span>
+                <a href="">Privacy Policy </a><span>||</span>
+                <a href="#contact">Contact Us</a>
             </div>
-            <div class="foot2">
-                CLASS MANAGEMENT SYSTEM
+            <div class="copyright">
+                <p>&copy; Copyright @ 2023</p>
             </div>
-            <div class="foot3">
-                <div class="pages">
-                    <a href="">Conditions of use </a><span>||</span>
-                    <a href="">Privacy Policy </a><span>||</span>
-                    <a href="#contact">Contact Us</a>
-                </div>
-                <div class="copyright"><p>&copy; Copyright @ 2023</p></div>
-            </div>
-        </footer>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
