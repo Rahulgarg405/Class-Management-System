@@ -8,7 +8,7 @@ main{
     background-color: rgb(255, 255, 221);
     display: grid;
     place-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 form{
@@ -22,7 +22,7 @@ form{
     gap: 2rem;
     max-width: 600px;
     width: 100%;
-    height: 70%;
+    height: 80%;
     margin: auto;
     padding: 8rem 4rem;
 }
@@ -38,6 +38,13 @@ input{
     border-radius: 5px;
 }
 
+select{
+    padding: 1rem;
+    outline: none;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    width: 90%;
+}
 button{
     background-color: blueviolet;
     border-radius: 5px;

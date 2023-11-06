@@ -22,4 +22,12 @@ app.get('/studentLogin', (req, res)=>{
 app.get('/teacherLogin', (req, res)=>{
     res.render('teacherLogin');
 });
+
+app.get('/studentRegister', (req, res)=>{
+    res.render('studentRegister');
+});
+
+app.get('/teacherRegister', (req, res)=>{
+    res.render('teacherRegister');
+});
 export default app;
