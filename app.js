@@ -1,6 +1,8 @@
 import express from "express";
 import { config } from "dotenv";
 import path from "path";
+import { studentLogin, studentRegister } from "./controllers/students.js";
+import { teacherLogin, teacherRegister } from "./controllers/teachers.js";
 
 const app = express();
 
@@ -9,6 +11,8 @@ config({
 });
 
 app.use(express.static('public'));
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res)=>{
@@ -30,4 +34,18 @@ app.get('/studentRegister', (req, res)=>{
 app.get('/teacherRegister', (req, res)=>{
     res.render('teacherRegister');
 });
+
+app.get('/studentmain', (req, res)=>{
+    res.render('studentmain');
+})
+
+app.get('/teachermain', (req, res)=>{
+    res.render('teachermain');
+})
+
+
+app.post('/teacherLogin', teacherLogin);
+app.post('/teacherRegister', teacherRegister);
+app.post('/studentRegister', studentRegister);
+app.post('/studentLogin', studentLogin);
 export default app;

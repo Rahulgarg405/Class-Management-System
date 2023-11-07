@@ -10,12 +10,12 @@
 
 <body>
     <main>
-        <form action="">
+        <form method="post" action="/studentRegister">
             <h1>REGISTER</h1>
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="Roll no." required>
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="Roll no." name="rollno" required>
             <label for="sem">Enter Semester : 
-            <select name="sem" id="sem" aria-placeholder="Semester">
+            <select name="semester" id="semester" aria-placeholder="Semester">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -39,8 +39,9 @@
                     <option value="AE">AE</option>
                 </select>
             </label>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
+            <input type="text" placeholder="Contact no." name="contact" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
             <button type="submit">Register</button>
             <p>Already have an Account ? <a href="/studentLogin">Login</a></p>
         </form>

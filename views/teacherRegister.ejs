@@ -10,9 +10,9 @@
 
 <body>
     <main>
-        <form action="">
+        <form method="post" action="/teacherRegister">
             <h1>REGISTER</h1>
-            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Name" name="name" required>
             <label for="department">Enter Department : 
                 <select name="department" id="department">
                     <option value="IT">CS & IT</option>
@@ -23,8 +23,8 @@
                     <option value="HEAS">HEAS</option>
                 </select>
             </label>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
             <button type="submit">Register</button>
             <p>Already have an Account ? <a href="/teacherLogin">Login</a></p>
         </form>
