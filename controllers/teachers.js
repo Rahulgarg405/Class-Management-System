@@ -16,10 +16,10 @@ export const teacherLogin = async (req, res, next)=>{
             return res.render('teacherLogin', {message: "Invalid Password"});
         }
 
-        const token = jwt.sign({_id:teacher._id}, "abcdefghij");
+        const token = jwt.sign({_id:teacher._id}, process.env.JWT_SECRET);
         res.cookie("token", token, {
             httpOnly: true,
-            expires: new Date(Date.now() + 60*1000),
+            expires: new Date(Date.now() + 15 * 60 * 1000),
         });
         res.redirect('/teachermain');
     } catch (error) {
@@ -44,10 +44,10 @@ export const teacherRegister = async (req, res, next) => {
             password,
         });
 
-        const token = jwt.sign({ _id: teacher._id }, "abcdefghij");
+        const token = jwt.sign({ _id: teacher._id }, process.env.JWT_SECRET);
         res.cookie("token", token, {
             httpOnly: true,
-            expires: new Date(Date.now() + 60 * 1000),
+            expires: new Date(Date.now() + 15 * 60 * 1000),
         });
 
         res.redirect('/teachermain');

@@ -15,10 +15,10 @@ export const studentLogin = async (req, res, next) => {
             return res.render('studentLogin', { message: "Incorrect Password" });
         }
 
-        const token = jwt.sign({ _id: student._id }, "abcdefg");
+        const token = jwt.sign({ _id: student._id }, process.env.JWT_SECRET);
         res.cookie("token", token, {
             httpOnly: true,
-            expires: new Date(Date.now() + 60 * 1000),
+            expires: new Date(Date.now() + 15 * 60 * 1000),
         });
 
         res.redirect('/studentmain');
@@ -47,10 +47,10 @@ export const studentRegister = async (req, res, next) => {
             password,
         });
 
-        const token = jwt.sign({ _id: student._id }, "abcdefg");
+        const token = jwt.sign({ _id: student._id }, process.env.JWT_SECRET);
         res.cookie("token", token, {
             httpOnly: true,
-            expires: new Date(Date.now() + 60 * 1000),
+            expires: new Date(Date.now() + 15 * 60 * 1000),
         });
 
         res.redirect('/studentmain');
