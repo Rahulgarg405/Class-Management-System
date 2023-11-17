@@ -1,19 +1,15 @@
 import mongoose from "mongoose";
 
 const assignmentSchema = new mongoose.Schema({
-    title: {
+    name: {
         type: String,
         required: true,
     },
-    description:{
-        type: String,
-    },
-    fileurl : {
-        type: String,
-    },
-    duedate: {
-        type: Date,
+    assign: {
+        data: Buffer,
+        contentType: String,
     }
-}, {timestamps: true});
+
+}, { timestamps: true });
 
 export const assignment = mongoose.model('assignment', assignmentSchema);
