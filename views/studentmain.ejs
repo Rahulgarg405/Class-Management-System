@@ -11,10 +11,9 @@
         <div class="nav">
             <h2>Class Management System</h2>
             <div class="navbar">
-                
-                <ul><a href="">Time-Table</a></ul>
                 <ul><a href="/downassign">Assignments</a></ul>
                 <ul><a href="/studentprofile">Profile</a></ul>
+                <ul><a href="/logout">Log Out</a></ul>
             </div>
         </div>
     </header>
@@ -22,5 +21,19 @@
     <div class="welcome">
         <h2>Hello  , <%= student.name %></h2>
     </div>
+
+    <main>
+        <div class="assign">
+            <img src="pexels-pixabay-289737.jpg" alt="Assignments">
+            <br>
+            <button><a href="/downassign">Assignments</a></button>
+        </div>
+        <div class="profile">
+            <img src="profile.png" alt="Profile">
+            <br>
+            <button><a href="/studentprofile">Profile</a></button>
+        </div>
+    </main>
+
 </body>
 </html>

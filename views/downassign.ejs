@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignments</title>
+    <link rel="stylesheet" href="maincss.css">
 </head>
-<body>
+<body style="margin: 2vmax;">
     <h2>Assignments :</h2>
     <ul>
         <% assignments.forEach((assignment) => { %>
-            <li>
-                <a href="/download/<%= assignment._id %>" download>
+            <li style="margin: 1vmax;">
+                <a href="/download/<%= assignment._id %>" download style="color:blue; font-weight: 700;">
                     <%= assignment.name %> - Download
                 </a>
             </li>

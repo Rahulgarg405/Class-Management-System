@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <main>
+        <form method="post" action="/adminLogin">
+            <h1>LOGIN</h1>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <p class="error">
+                <%= locals.message %>
+            </p>
+            <button type="submit">Log In</button>
+            <p>Don't have an Account ? <a href="/adminRegister">Register</a></p>
+        </form>
+    </main>
+</body>
+
+</html>

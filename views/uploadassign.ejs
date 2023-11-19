@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <p>File upload</p>
+    <h1>File upload</h1>
     <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="text" name="name">
+        <input type="text" name="name" placeholder="Topic-Name">
         <input type="file" name="assign">
         <button type="submit">Upload</button>
     </form>

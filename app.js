@@ -9,6 +9,8 @@ import { Student } from "./models/students.js";
 import multer from "multer";
 import { assignment } from "./models/assignments.js";
 import fs, { rmSync } from "fs";
+import { adminLogin, adminRegister } from "./controllers/admin.js";
+import { Teacher } from "./models/teachers.js";
 
 
 const app = express();
@@ -43,6 +45,19 @@ app.get('/teacherRegister', (req, res)=>{
     res.render('teacherRegister');
 });
 
+app.get('/adminLogin', (req, res)=>{
+    res.render("adminLogin");
+});
+
+app.get('/adminRegister', (req, res)=>{
+    res.render("adminRegister");
+});
+
+app.get('/adminmain', (req, res)=>{
+    res.render("adminmain");
+});
+
+
 app.get('/studentmain', studentAuthenticated ,(req, res)=>{
     res.render('studentmain', {
         student : req.student,
@@ -64,6 +79,13 @@ app.get('/teacherprofile', teacherAuthenticated, (req, res)=>{
         teacher : req.teacher,
     });
 });
+
+app.get('/getallUsers', async (req, res)=>{
+    const students = await Student.find();
+    const teachers = await Teacher.find();
+    res.render("getallUsers", {students, teachers});
+});
+
 
 app.get('/uploadassign', (req, res)=>{
     res.render('uploadassign');
@@ -89,11 +111,21 @@ app.get('/downassign', async (req, res)=>{
     }
 })
 
+app.get("/logout", (req, res)=>{
+    res.cookie("token", null, {
+        httpOnly: true ,
+        expires: new Date(Date.now()),
+    });
+    res.redirect("/");
+});
+
+
 app.post('/teacherLogin', teacherLogin);
 app.post('/teacherRegister', teacherRegister);
 app.post('/studentRegister', studentRegister);
 app.post('/studentLogin', studentLogin);
-
+app.post('/adminLogin', adminLogin);
+app.post('/adminRegister', adminRegister);
 
 
 const storage = multer.diskStorage({

@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Courier New', Courier, monospace;
+    width: 100%;
 }
 
 header{
@@ -37,4 +38,53 @@ a:hover{
 }
 .welcome{
     text-align: center;
+    padding: 2vmax;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 50%;
+}
+.assign{
+    width: 50%;
+    text-align: center;
+}
+.profile{
+    width: 50%;
+    text-align: center;
+}
+.assign img{
+    width: 70%;
+}
+.profile img{
+    width: 80%;
+}
+
+.admin{
+    text-align: center;
+}
+
+
+button{
+    background-color: blueviolet;
+    border-radius: 5px;
+    width: 12rem;
+    color: white;
+    align-self: center;
+    font: 400 1rem sans-serif;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+button:hover{
+    background-color: crimson;
+    transition: all .3s;
+}
+
+#profileContainer p{
+    margin: 1vmax;
+    font-weight: 600;
 }

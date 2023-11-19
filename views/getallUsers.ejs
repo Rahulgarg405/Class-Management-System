@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Users</title>
+    <link rel="stylesheet" href="maincss.css">
+</head>
+<style>
+    ul{font-weight: 600;}
+</style>
+<body style="margin: 3vmax;">
+    <h1>Students : </h1>
+    <ul>
+        <% students.forEach((student) => { %>
+            <li style="margin: 1vmax;">
+                <ul><h3>Name : <%= student.name %></h3></ul>
+                <ul>Roll No,. : <%= student.rollno %></ul>
+                <ul>Branch : <%= student.branch %></ul>
+                <ul>Semester : <%= student.semester %></ul>
+                <ul>Conatact no. : <%= student.contact %></ul>
+                <ul>Email : <%= student.email %></ul>
+            </li>
+        <% }); %>
+    </ul>
+    <h1>Teachers : </h1>
+    <ul>
+        <% teachers.forEach((teacher) => { %>
+            <li style="margin: 1vmax;">
+                <ul><h3>Name : <%= teacher.name %></h3></ul>
+                <ul>Department : <%= teacher.department %></ul>
+                <ul>Email : <%= teacher.email %></ul>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
