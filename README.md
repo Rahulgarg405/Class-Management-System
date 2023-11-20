@@ -23,12 +23,12 @@ The Class Management System is a web-based platform designed to streamline commu
 
 
 ```bash
-  git clone https://github.com/Rahulgarg405/Class-Management-System.git 
+  git clone https://github.com/Rahulgarg405/EduHub-Class-Management-System.git
 ```
 Navigate to the project directory
 
 ```bash
-  cd Class-Management-System
+  cd EduHub-Class-Management-System
 ```
 Install Dependencies
 
