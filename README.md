@@ -25,15 +25,19 @@ The Class Management System is a web-based platform designed to streamline commu
 ```bash
   git clone https://github.com/Rahulgarg405/Class-Management-System.git 
 ```
-    Navigate to the project directory
+Navigate to the project directory
+
 ```bash
   cd Class-Management-System
 ```
-    Install Dependencies
+Install Dependencies
+
 ```bash
   npm install
 ``` 
-    Start Application
+
+Start Application
+
 ```bash
   npm start
 ```
